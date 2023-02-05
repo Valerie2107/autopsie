@@ -20,13 +20,13 @@ body.dark{
     background-color: #060606;
     color: lightgrey;
 }
-.dark h1,       /* body reçoit la classe dark, alors les titres changent*/
+.dark h1,        /* body reçoit la classe dark, alors les titres changent*/
 .dark h2, 
 .dark h3{
     font-family: cursive;
     color:red;
 }
-.funfun p{      /* body reçoit la casse funfun, alors les éléments ci-dessous changent*/
+.funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
     color:aqua;
 }
 .funfun li{
@@ -34,7 +34,7 @@ body.dark{
 }
 
 .empty{
-    height: 3em;
+    height: 1.5em;
 }
 
 

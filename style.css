@@ -1,8 +1,14 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "fears";
+    src: local("fears"),
+      url("fears.ttf") format("truetype"); 
+  }
 
-#dark_mode{
+
+#dark_mode{   
     border-radius: 10px;
     padding: 0.5em 1em;
     position: fixed;
@@ -23,7 +29,7 @@ body.dark{
 .dark h1,        /* body reçoit la classe dark, alors les titres changent*/
 .dark h2, 
 .dark h3{
-    font-family: cursive;
+    font-family: 'fears';
     color:red;
 }
 .funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
@@ -50,8 +56,7 @@ h1{
 
 
 .details{
-    display: grid
-    grid-template-columns; 
-    repeat(3, 1fr);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
     grid-gap: 10px;
 }

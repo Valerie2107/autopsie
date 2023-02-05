@@ -2,6 +2,37 @@
     box-sizing: border-box;
 }
 
+#dark_mode{
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    position: fixed;
+    right: 1.5em;
+    top: 1.5em;
+}
+#funfun{
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    position: fixed;
+    right: 1.5em;
+    top: 4.5em;
+}
+body.dark{
+    background-color: #060606;
+    color: lightgrey;
+}
+.dark h1,       /* body reçoit la classe dark, alors les titres changent*/
+.dark h2, 
+.dark h3{
+    font-family: cursive;
+    color:red;
+}
+.funfun p{      /* body reçoit la casse funfun, alors les éléments ci-dessous changent*/
+    color:aqua;
+}
+.funfun li{
+    color: rgb(238, 144, 221);
+}
+
 .empty{
     height: 3em;
 }

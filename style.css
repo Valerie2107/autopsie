@@ -5,9 +5,8 @@
     font-family: "fears";
     src: local("fears"),
       url("fears.ttf") format("truetype"); 
-  }
-
-
+}
+/*-----------différents modes----------------*/
 #dark_mode{   
     border-radius: 10px;
     padding: 0.5em 1em;
@@ -34,11 +33,17 @@ body.dark{
 }
 .funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
     color:aqua;
+    border: 2px solid pink;
+    border-radius: 10px;
 }
 .funfun li{
     color: rgb(238, 144, 221);
 }
-
+   
+/*-------------------CSS classique----------------*/
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .empty{
     height: 1.5em;
 }
@@ -59,4 +64,10 @@ h1{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-gap: 10px;
+}
+
+
+
+footer{
+    text-align: center;
 }

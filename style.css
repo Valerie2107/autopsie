@@ -20,6 +20,7 @@
     position: fixed;
     right: 1.5em;
     top: 4.5em;
+    
 }
 body.dark{
     background-color: #060606;
@@ -33,8 +34,8 @@ body.dark{
 }
 .funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
     color:aqua;
-    border: 2px solid pink;
     border-radius: 10px;
+    border: 2px dotted pink;
 }
 .funfun li{
     color: rgb(238, 144, 221);

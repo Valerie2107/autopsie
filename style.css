@@ -13,19 +13,24 @@ h1{
 }
 /*-----------différents modes----------------*/
 #dark_mode{   
-    border-radius: 10px;
-    padding: 0.5em 1em;
+ /* border-radius: 10px;
+    padding: 0.5em 1em;*/
     position: fixed;
     right: 1.5em;
     top: 1.5em;
 }
+#dark_mode img{
+    width: 50px;
+}
 #funfun{
-    border-radius: 10px;
-    padding: 0.5em 1em;
+    /*border-radius: 10px;
+    padding: 0.5em 1em;*/
     position: fixed;
     right: 1.5em;
     top: 4.5em;
-    
+}
+#funfun img{
+    width: 50px;
 }
 body.dark{
     background-color: #060606;
@@ -36,6 +41,9 @@ body.dark{
 .dark h3{
     font-family: 'fears';
     color:red;
+}
+.dark #dark_mode img{
+    
 }
 .funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
     color:aqua;
@@ -62,12 +70,15 @@ body{
 .underline{
     text-decoration: underline;
 }
-.details{
+.containeur{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-area: 1/1/5/3;
 }
 
+.txt_details{
+    font-style: italic;
+    font-size: smaller;
+}
 
 
 footer{

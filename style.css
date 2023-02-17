@@ -42,9 +42,6 @@ body.dark{
     font-family: 'fears';
     color:red;
 }
-.dark #dark_mode img{
-    
-}
 .funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
     color:aqua;
     border-radius: 10px;

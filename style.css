@@ -22,6 +22,23 @@ h1{
 #dark_mode img{
     width: 50px;
 }
+body:not(.dark) .visibledark_off{
+
+}
+body:not(.dark) .visibledark_on{
+    display: none;
+}
+
+
+body.dark .visibledark_off{
+    display: none;
+}
+body.dark .visibledark_on{
+    
+}
+
+
+
 #funfun{
     /*border-radius: 10px;
     padding: 0.5em 1em;*/
@@ -32,6 +49,24 @@ h1{
 #funfun img{
     width: 50px;
 }
+body:not(.funfun) .visiblefun_off{
+
+}
+body:not(.funfun) .visiblefun_on{
+display: none;
+}
+
+body.funfun .visiblefun_off{
+display: none; 
+}
+body.funfun .visiblefun_on{
+   
+}
+
+
+
+
+
 body.dark{
     background-color: #060606;
     color: lightgrey;

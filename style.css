@@ -9,11 +9,13 @@ h1{
 @font-face {
     font-family: "fears";
     src: local("fears"),
-      url("fears.ttf") format("truetype"); 
+    url("fears.ttf") format("truetype"); 
 }
-/*-----------différents modes----------------*/
+
+
+/*-----------dark modes----------------*/
 #dark_mode{   
- /* border-radius: 10px;
+    /* border-radius: 10px;
     padding: 0.5em 1em;*/
     position: fixed;
     right: 1.5em;
@@ -22,14 +24,23 @@ h1{
 #dark_mode img{
     width: 50px;
 }
-body:not(.dark) .visibledark_off{
+body.dark{
+    background-color: #060606;
+    color: lightgrey;
+}
+.dark h1,        /* body reçoit la classe dark, alors les titres changent*/
+.dark h2, 
+.dark h3{
+    font-family: 'fears';
+    color:red;
+}
 
+body:not(.dark) .visibledark_off{     /*switch de l'imge*/
+    
 }
 body:not(.dark) .visibledark_on{
     display: none;
 }
-
-
 body.dark .visibledark_off{
     display: none;
 }
@@ -37,8 +48,7 @@ body.dark .visibledark_on{
     
 }
 
-
-
+/*----------------------fun mode--------------------*/
 #funfun{
     /*border-radius: 10px;
     padding: 0.5em 1em;*/
@@ -49,7 +59,16 @@ body.dark .visibledark_on{
 #funfun img{
     width: 50px;
 }
-body:not(.funfun) .visiblefun_off{
+.funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
+    color:aqua;
+    border-radius: 10px;
+    border: 2px dotted pink;
+}
+.funfun li{
+    color: rgb(238, 144, 221);
+}
+   
+body:not(.funfun) .visiblefun_off{      /*switch de l'imge*/
 
 }
 body:not(.funfun) .visiblefun_on{
@@ -63,37 +82,14 @@ body.funfun .visiblefun_on{
    
 }
 
-
-
-
-
-body.dark{
-    background-color: #060606;
-    color: lightgrey;
-}
-.dark h1,        /* body reçoit la classe dark, alors les titres changent*/
-.dark h2, 
-.dark h3{
-    font-family: 'fears';
-    color:red;
-}
-.funfun p{      /* body reçoit la classe funfun, alors les éléments ci-dessous changent*/
-    color:aqua;
-    border-radius: 10px;
-    border: 2px dotted pink;
-}
-.funfun li{
-    color: rgb(238, 144, 221);
-}
-   
 /*-------------------CSS classique----------------*/
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 2em;
 }
 .empty{
     height: 1.5em;
 }
-
 #victime{
     width: 500px;
     margin: 0 auto;
@@ -102,17 +98,28 @@ body{
 .underline{
     text-decoration: underline;
 }
-.containeur{
-    display: grid;
-    grid-area: 1/1/5/3;
-}
-
 .txt_details{
     font-style: italic;
     font-size: smaller;
 }
-
-
 footer{
     text-align: center;
+}
+
+/*----------mise en page des photos-indices----------------*/
+.containeur{
+    display: grid;
+    grid-template-rows: repeat(2, 4fr);
+    grid-template-columns: repeat(4 4fr);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.a{
+    grid-row: 1,2;
+    grid-column: 2,3;
+}
+.b{
+    grid-row: 2,3;
+    grid-column: 2;
 }
